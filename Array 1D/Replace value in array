@@ -1,0 +1,36 @@
+// Replace value in array
+#include<stdio.h>
+main()
+{
+	int a[100],i,n,pos,nv;
+	printf("Enter the size of Array ::");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}	
+	printf("Enter the position.....");
+	scanf("%d",&pos);
+	printf("Enter the new value.......");
+	scanf("%d",&nv);
+	
+
+	a[pos]=nv;
+	printf("========== Answer ===============\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+	
+	
+} 
+/* 
+
+i	0 1 2 3 4
+v	9 8 6 4 1 
+
+Replace 4 pos-->500
+i	0 1 2 3 4
+v	9 8 6 4 500 
+
+*/

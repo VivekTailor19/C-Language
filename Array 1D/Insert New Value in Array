@@ -1,0 +1,41 @@
+// Insert new value in array
+#include<stdio.h>
+main()
+{
+	int a[100],i,n,pos,nv;
+	printf("Enter the size of Array ::");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}	
+	printf("Enter the position.....");
+	scanf("%d",&pos);
+	printf("Enter the new value");
+	scanf("%d",&nv);
+	
+	for(i=n-1;i>=pos;i--)
+	{
+		a[i+1]=a[i];
+	}
+	a[pos]=nv;
+	printf("========== Answer ===============");
+	for(i=0;i<=n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+	
+	
+} 
+
+/* 
+
+i	0 1 2 3 4
+v	9 8 6 4 1 
+
+Insert 0 pos-->100
+i	0   1 2 3 4 5
+v	100 9 8 6 4 1 
+
+
+*/

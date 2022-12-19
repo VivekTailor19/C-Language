@@ -1,0 +1,33 @@
+// Count Frequency of Each Character in String
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[100];
+	int i,j,n,count=0;
+	
+	printf("Enter the String :: ");
+	gets(a);
+	
+	n=strlen(a);
+	
+	for(i=0;i<n;i++)
+	{
+		count=1;
+		for(j=i+1;j<n;j++)
+		{		
+			if(a[i]==a[j])
+			{
+				count++;
+				a[j]='\0';
+			}
+		}
+		if(a[i]!='\0' && a[i]!=' ')
+		{
+			printf("%c == %d",a[i],count);
+			printf("\n");
+		}
+	}
+}
+	//Hello
+	// 01234

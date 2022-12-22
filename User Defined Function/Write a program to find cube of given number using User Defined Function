@@ -1,0 +1,20 @@
+//Find Cube of The Number
+#include<stdio.h>
+int cube(int a);
+main()
+{
+	int n;
+	int c;
+	printf("Enter the Number");
+	scanf("%d",&n);
+	
+	cube(n);	
+	//printf(" Cube %d",c);
+}
+
+int cube(int a)
+{
+	int b=a*a*a;
+	printf("Cube is %d\t",b);
+	//return b;
+}

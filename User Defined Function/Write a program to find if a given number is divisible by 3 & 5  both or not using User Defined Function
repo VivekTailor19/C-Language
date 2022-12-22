@@ -1,0 +1,33 @@
+//Given Number is Divisible by 3 & 5 or NOT Divisible 
+#include<stdio.h>
+int div(int a);
+main()
+{
+	int no;
+	printf("Enter the Number");
+	scanf("%d",&no);
+	
+	div(no);
+}
+
+int div(int a)
+{
+	if(a%5==0 && a%3==0)
+	{
+		printf("%d is  Divisible by 3 & 5",a);
+	}
+	else if(a%5==0)
+	{
+		printf("%d is Divisible by only 5....\n\n NOT Divisible by 3 ....",a);
+	}
+	else if(a%3==0)
+	{
+		printf("%d is Divisible by only 3....\n\n NOT Divisible by 5 ....",a);
+	}
+	else
+	{
+		printf("------ %d NOT Divisible by only 3 & 5----",a);
+	}
+}
+
+// 15=     15%3==0    15%5==0
